@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta</title>
+    <style>
+        /* Add animation */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 0.3px 0;
+            text-align: center;
+        }        
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .main-content {
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .predict-button {
+    background-color: #007bff; /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 15px 30px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.predict-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+        .image {
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+
+        .image > div {
+            display: inline-block;
+            width: 32%; /* Adjusted to approximately 33.33% to accommodate three images in a row */
+            margin: 5px;
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .chennai{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        #gallery {
+    padding: 20px;
+}
+
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image > div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.image > div img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image > div:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+    </style>
+</head>   
+<body>
+    <header>
+        <h1>DELTA.SH</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#predict">Predict</a>
+        <a href="#about">About</a>
+        
+        <a href="#galllery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+    <div class="container">
+        <div class="main-content">
+            <h2 style="text-align: center; color: black;">Welcome to our website!</h2>
+            
+        <br>
+        <p style="text-align: center; color: black;">
+            "Welcome to Delta.SH - Your go-to destination for real-time flood prediction and monitoring. Our platform harnesses cutting-edge technology to analyze various data sources and accurately forecast potential flood-prone areas during rainfall, empowering you with actionable insights to navigate urban waterlogging challenges."Stay informed and stay safe with Delta.SH - empowering you with actionable insights to navigate urban waterlogging challenges."</p>
+        <br>
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15558.805058686276!2d80.23500985095146!3d13.085441295085887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1649792993669!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+    <br><br>
+
+    <br>
+<br>
+
+<section id="predict" class="animate-on-scroll">
+    <div style="text-align: center;">
+        <h2>This is the solution for your question</h2>
+        <p>Insert your catchy content here.</p>
+        <button onclick="redirectToStreamlit()" class="predict-button">Predict My Confusion</button>
+    </div>
+</section>
+<br><br>
+
+<section id="about">
+    <div class="chennai">
+        <h2 style="color: #333;">About Chennai</h2>
+        <p style="color: #333;">
+            Here's the text sorted into two lines:
+            
+            "In Chennai, areas with heavy rainfall, particularly coastal and low-lying zones, are more prone to waterlogging incidents. Coastal regions like Mylapore and Besant Nagar face increased risk due to their proximity to the sea and susceptibility to storm surges. Adyar and Velachery, situated in the southern part of the city, often experience waterlogging during intense rainfall events. Urbanization and inadequate drainage exacerbate the problem, with infrastructure unable to cope with the volume of water. Understanding these localized risks is essential for mitigation.</p>
+    </div>
+</section>
+    <br>
+    <div>
+<br>
+<br>
+
+  
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+    <div class="image">
+        <div class="img1">
+            <img src="houseflood.jpg" alt="Image 1" width="350px" height="350px">
+        </div>
+        <div class="img2">
+            <img src="bikeflood.jpg" alt="Image 2" width="350px" height="350px">
+        </div>
+
+        <div class="img3">
+            <img src="house.jpg" alt="Image 3" width="350px" height="350px">
+        </div>
+        <br><br><br>
+        <div class="img4">
+            <img src="dam.jpg" alt="Image 4" width="350px" height="350px">
+        </div>
+
+        <div class="img5">
+            <img src="agri.jpg" alt="Image 5" width="350px" height="350px">
+        </div>
+
+    </div>
+    </section>
+    <section id="contact" style="background-color: #f9f9f9; padding: 50px 0;">
+        <div style="text-align: center;">
+            <h2>Contact Us</h2>
+            <p>Feel free to get in touch with us for any inquiries or assistance.</p>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 30px;">
+            <div style="width: 50%;">
+                <form style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <input type="text" placeholder="Your Name" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                    <textarea placeholder="Your Message" rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                    <button type="submit" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background-color: #007bff; color: #fff; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+<br>
+<br>
+    <section>
+    <footer>
+        <p>&copy; 2024 Water Logging Website. All rights reserved.</p>
+    </footer>
+</section>
+</body>
+</html>
+<script>
+    function redirectToStreamlit() {
+        window.location.href = "http://localhost:8519/";
+    }
+    // Add animation class when the element is in view
+function scrollAnimation() {
+    var elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('animate-fade-in');
+        }
+    });
+}
+
+// Check if element is in view
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', scrollAnimation);
+
+</script>
+    

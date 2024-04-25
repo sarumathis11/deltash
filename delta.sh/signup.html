@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Make the body fixed */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding for better appearance */
+}
+h2 {
+    font-size: 36px; /* Set the font size to be larger */
+    font-weight: bold; /* Set the font weight to bold */
+    color: #333; /* Set the text color */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    text-align: center; /* Center the text horizontally */
+    margin-top: 50px; /* Add margin to push it down from the top */
+}
+
+
+
+#globe {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%; /* Make the GIF occupy half of the container width */
+    width: 50vw; /* Set width to 50% of viewport width */
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 50%;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px; /* Add padding to the form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Make the form take up 50% of the container width */
+    margin-left: 20%; /* Add margin to center the form horizontally */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: calc(100% - 40px); /* Subtract the padding from the width */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: fit-content; /* Adjust width to fit content */
+    align-self: center; /* Center horizontally within the form */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div id="globe">
+    <img src="earth.gif" alt="Globe" width="900" height="899">
+  </div>
+  <div class="form-container">
+    <h2 style="color: aliceblue;">DELTA.sh</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <br><br>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  // Get the values entered by the user
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  // You can do something with the values, like sending them to a server
+  // For now, let's just redirect to home.html
+  window.location.href = "home.html";
+});
+</script>
+
+</body>
+</html>
